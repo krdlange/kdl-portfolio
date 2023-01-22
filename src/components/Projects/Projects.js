@@ -3,11 +3,16 @@ import lineImg from "./line.png";
 import styled from "styled-components";
 
 export default function Projects() {
+  // const Container = styled.div`
+  //   width: 100%;
+  //   margin: auto;
+  //   height: 100vh;
+  // `;
+
   const Container = styled.div`
-    width: 100%;
-    margin: auto;
-    height: 100vh;
-  `;
+  display: flex;
+  flex-direction: column;
+`;
 
   const Section = styled.div`
     width: 80%;
@@ -18,7 +23,7 @@ export default function Projects() {
     max-width: 100%;
     justify-content: center;
     display: flex;
-    margin: -36px 0px 4px 0px;
+    margin: 0 0px 4px 0px;
   `;
 
   const Img = styled.img.attrs({
@@ -40,9 +45,15 @@ export default function Projects() {
   `;
 
   const Project = styled.div`
-  margin: 16px;
-  width: 80%;
+    margin: 16px;
+    width: 80%;
   `;
+
+  const GitLink = styled.a`
+    text-decoration: underline;
+  `;
+
+
 
   return (
     <div>
@@ -66,7 +77,9 @@ export default function Projects() {
               save them to their personal collection, and track their progress
               and ratings within the app.
             </p>
-            <a href="https://github.com/krdlange/arcadia">View on GitHub</a>
+            <GitLink>
+              <a href="https://github.com/krdlange/arcadia" target="_blank" without rel="noreferrer">View on GitHub</a>
+            </GitLink>
           </Project>
         </ProjectContainer>
         <Section>
@@ -81,15 +94,20 @@ export default function Projects() {
           <Project>
             <h2>Recipe Haul</h2>
             <p>
-            An e-commerce web application that integrates recipe search with grocery shopping.
+              An e-commerce web application that integrates recipe search with
+              grocery shopping.
             </p>
-            <a href="https://github.com/CodeOp-tech/FSPT12-final-project">View on GitHub</a>
+            <GitLink>
+            <a href="https://github.com/CodeOp-tech/FSPT12-final-project" target="_blank" without rel="noreferrer">
+              View on GitHub
+            </a>
+            </GitLink>
+
           </Project>
         </ProjectContainer>
         <Section>
           <Img></Img>
         </Section>
-        
       </Container>
     </div>
   );

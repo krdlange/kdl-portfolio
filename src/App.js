@@ -1,38 +1,52 @@
 import "./App.css";
-import background from "./images/bg-img.jpg";
 import styled from "styled-components";
 import Intro from "./components/Intro/Intro.js";
 import Projects from "./components/Projects/Projects.js";
 import Aboutme from "./components/About Me/Aboutme";
+import Contact from "./components/Contact/Contact";
 
-function App() {
-  const BackgroundImage = styled.div`
-    background-image: url(${background});
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, left, right;
-  `;
-
-  const Container = styled.section`
+function App() {  
+  
+  const Container = styled.div`
     display: flex;
-    width: 100%;
-    margin: 0 auto;
   `;
 
-  // const IntroButtonsContainer = styled.div`
-  //   display: flex;
-  //   justify-content: center;
-  //   flex-wrap: wrap;
-  //   margin-bottom: 314px;
-  // `
+  const Background = styled.div`
+    background-image: linear-gradient(
+      125deg,
+      hsl(68deg 52% 80%) 1%,
+      hsl(29deg 55% 82%) 71%,
+      hsl(38deg 59% 82%) 88%,
+      hsl(50deg 54% 80%) 95%,
+      hsl(22deg 44% 83%) 100%
+    ); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+      `;
+
+  const Row = styled.div`
+    height: 100vh;
+  `;
 
   return (
     <div>
       <Container>
-        <BackgroundImage>
-          <Intro></Intro>
-          <Projects></Projects>
-          <Aboutme></Aboutme>
-        </BackgroundImage>
+        <Background>
+          <Row>
+            <Intro></Intro>
+          </Row>
+          <Row>
+            <Projects></Projects>
+          </Row>
+          <Row>
+            <Aboutme></Aboutme>
+          </Row>
+          <Row>
+            <Contact></Contact>
+          </Row>
+        </Background>
       </Container>
     </div>
   );

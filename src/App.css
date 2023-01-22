@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 h1 {
   font-size: 32px;
   font-weight: 600;
@@ -6,4 +10,8 @@ h1 {
 h2 {
   font-size: 28px;
   font-weight: 700;
+}
+
+a {
+  text-decoration: none;
 }

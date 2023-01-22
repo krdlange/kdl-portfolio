@@ -2,27 +2,27 @@ import React from "react";
 import styled from "styled-components";
 // import sparkImg from "./assets/sparks.png";
 import Button from "./Button";
-import { device } from "../Device";
 
 export default function Intro() {
   const Container = styled.div`
-    margin: auto;
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    // height: 100vh;
+    width: 80%;
+    margin: 240px auto 0 auto;
   `;
 
   const Introduction = styled.div`
-    width: 60%;
-    margin: 240px auto 40px auto;
     text-align: center;
   `;
 
   const Navigation = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 
-    @media ${(device.mobileS, device.mobileM, device.mobileL)} {
-      flex-wrap: wrap;
-    }
+
   `;
 
   //   const ImgContainer = styled.div`
