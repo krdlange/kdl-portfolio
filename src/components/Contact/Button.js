@@ -4,10 +4,18 @@ import styled from "styled-components";
 const Button = ({ type, title }) => {
   return (
     <div>
+      <Container>
       <ButtonComponent type={type}>{title}</ButtonComponent>
+      </Container>
     </div>
   );
 };
+
+const Container = styled.div`
+width: 100%;
+display: flex;
+justify-content: center;
+`;
 
 const ButtonComponent = styled.button`
 font-size: 1em;
