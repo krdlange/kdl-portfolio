@@ -1,28 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 // import sparkImg from "./assets/sparks.png";
-import Button from "./Button";
+// import Button from "../Button";
 
 export default function Intro() {
-  const Container = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    // height: 100vh;
-    width: 80%;
-    margin: 240px auto 0 auto;
-  `;
 
   const Introduction = styled.div`
     text-align: center;
-  `;
-
-  const Navigation = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-
-
   `;
 
   //   const ImgContainer = styled.div`
@@ -50,7 +34,6 @@ export default function Intro() {
             <Img/>
       </ImgContainer> */}
 
-      <Container>
         <Introduction>
           <h5>Hi, welcome to my little space in the internet!</h5>
           <h1>
@@ -58,12 +41,6 @@ export default function Intro() {
             design and marketing
           </h1>
         </Introduction>
-        <Navigation>
-          <Button type="primary" title="Projects"></Button>
-          <Button type="primary" title="About Me"></Button>
-          <Button type="primary" title="Contact"></Button>
-        </Navigation>
-      </Container>
     </div>
   );
 }

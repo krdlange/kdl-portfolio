@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import lineImg from "./line.png";
 import profileImg from "./profilepic.png";
-import Button from "../Intro/Button";
+import Button from "../Button";
 import { device } from "../Device";
 
 export default function Aboutme() {
@@ -11,9 +11,15 @@ export default function Aboutme() {
   //   margin: auto;
   //   height: 100vh;
   // `;
+
   const Container = styled.div`
     display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
   `;
 
   const Section = styled.div`
@@ -25,6 +31,7 @@ export default function Aboutme() {
     max-width: 100%;
     justify-content: center;
     display: flex;
+    align-items: center;
     margin-bottom: 32px;
   `;
 
@@ -52,33 +59,35 @@ export default function Aboutme() {
     text-align: center;
 
     @media ${device.laptop} {
-      margin: 4px auto 32px auto;
+      margin: auto;
       width: 50%;
       text-align: left;
-
     }
   `;
 
   const BtnContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 40px auto 40px auto;
-`;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto 16px auto;
+  `;
 
   const ProfileImgContainer = styled.div`
     margin: auto;
-    // width: 20%;
 
-    @media ${device.laptop} {
-      margin: 28px auto;
-    }
+    // @media ${device.laptop} {
+    //   margin: auto;
+    // }
   `;
 
   const ProfileImg = styled.img.attrs({
     src: `${profileImg}`,
   })`
-    max-width: 150px;
+    width: 150px;
+
+    @media ${device.laptop} {
+      width: 200px;
+    }
   `;
 
   return (
@@ -111,9 +120,15 @@ export default function Aboutme() {
                 coding in Javascript.
               </p>
             </p>
-            <BtnContainer>
-               <Button type="primary" title="View Resume"></Button>
-            </BtnContainer>
+            <a
+              href="https://drive.google.com/file/d/1WCBpxCFxjp-pgVqnz8uar7NLLM3WHzuc/view?usp=share_link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BtnContainer>
+                <Button type="primary" title="View Resume"></Button>
+              </BtnContainer>
+            </a>
           </TextContainer>
           <ProfileImgContainer>
             <ProfileImg></ProfileImg>
