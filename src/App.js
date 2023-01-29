@@ -42,13 +42,13 @@ function App() {
   const IntroSection = styled.div`
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 100vh;
     width: 70%;
-    // padding-top: 50px;
   `;
 
   const Navigation = styled.div`
