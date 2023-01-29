@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import sparkImg from "./assets/sparks.png";
-// import Button from "../Button";
+import sparkImg from "./assets/sparks.png";
 
 export default function Intro() {
 
@@ -9,30 +8,28 @@ export default function Intro() {
     text-align: center;
   `;
 
-  //   const ImgContainer = styled.div`
-  //     // border: 1px solid red;
-  //     max-width: 100%;
-  //     position: sticky;
-  //     top: 100px;
-  //     justify-content: right;
-  //     display: flex;
-  //     z-index: 2;
-  //     float: right;
-  //   `;
+    const ImgContainer = styled.div`
+    position: relative;
+    // height: 100vh;
+    width: 100%;
+    background-color: #eee;
+    `;
 
-  //   const Img = styled.img.attrs({
-  //     src: `${sparkImg}`,
-  //   })`
-  //   height: auto;
-  //   max-width: 20%;
-  //   margin-right: 144px;
-  // }`;
+    const Img = styled.img.attrs({
+      src: `${sparkImg}`,
+    })`
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }`;
 
   return (
     <div>
-      {/* <ImgContainer>
+      <ImgContainer>
             <Img/>
-      </ImgContainer> */}
+      </ImgContainer>
 
         <Introduction>
           <h5>Hi, welcome to my little space in the internet!</h5>

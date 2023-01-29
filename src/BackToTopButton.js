@@ -22,7 +22,7 @@ const BackToTopButton = () => {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #000;
     padding: 10px 15px;
     display: none;
     font-size: .8em;
@@ -34,6 +34,9 @@ const BackToTopButton = () => {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
     width: 100px;
+    :hover {
+      background-color: #393933;
+    }
   `;
 
   return (

@@ -67,7 +67,7 @@ export default function Projects() {
           </Role>
 
           <Project>
-            <h2>Arcadia</h2>
+            <h3>Arcadia</h3>
             <p>
               A web application that helps gamers find & discover new games,
               save them to their personal collection, and track their progress
@@ -94,7 +94,7 @@ export default function Projects() {
           </Role>
 
           <Project>
-            <h2>Recipe Haul</h2>
+            <h3>Recipe Haul</h3>
             <p>
               An e-commerce web application that integrates recipe search with
               grocery shopping.

@@ -6,11 +6,6 @@ import Button from "../Button";
 import { device } from "../Device";
 
 export default function Aboutme() {
-  // const Container = styled.div`
-  //   width: 100%;
-  //   margin: auto;
-  //   height: 100vh;
-  // `;
 
   const Container = styled.div`
     display: flex;
@@ -74,10 +69,6 @@ export default function Aboutme() {
 
   const ProfileImgContainer = styled.div`
     margin: auto;
-
-    // @media ${device.laptop} {
-    //   margin: auto;
-    // }
   `;
 
   const ProfileImg = styled.img.attrs({
@@ -101,24 +92,12 @@ export default function Aboutme() {
         <AboutMeContainer>
           <TextContainer>
             <h2>About Me</h2>
+            <span>Hi! I am Kriska.</span>
             <p>
-              Hi! My name is Kriska. I was born in a small town in the
-              Philippines then I moved to Thailand at 16 and lived there for 10
-              years. Currently, I live in Amsterdam, married to a Dutchie.
-              Having gained experiences from multicultural and multilingual
-              environments turned me to become an adaptable, well-rounded
-              individual. Currently, I work at Jungle Gym as a Digital Marketer
-              with a specialization in UX and UI design. I use design thinking
-              methodologies to improve our shopping experience. I facilitate in
-              conceptualizing, shaping ideas, prototyping, and testing
-              interaction strategies. I am dedicated to learning and
-              understanding both user and business needs to come up with a
-              balanced solution to complex problems.
-              <p>
-                I'm inspired by films, music, fashion, and video games. In my
-                free time, I enjoy learning new skills, and currently, that’s
-                coding in Javascript.
-              </p>
+            After years of experience in Education, Customer Support, Marketing, and UX and UI design, I have recently shifted my focus to front-end development. I honed my skills by completing a six-month full-stack web development program at codeOp, where I gained hands-on experience in modern front-end frameworks like React and Vue, as well as back-end technologies such as Node.js, Express.js, RestAPI, and MySQL. 
+            <p>
+            I am highly motivated and attentive to detail, with a passion for creating web applications that are both functional and user-friendly.
+            </p>
             </p>
             <a
               href="https://drive.google.com/file/d/1WCBpxCFxjp-pgVqnz8uar7NLLM3WHzuc/view?usp=share_link"
