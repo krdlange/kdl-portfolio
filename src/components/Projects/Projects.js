@@ -3,18 +3,16 @@ import lineImg from "./line.png";
 import styled from "styled-components";
 
 export default function Projects() {
-  // const Container = styled.div`
-  //   width: 100%;
-  //   margin: auto;
-  //   height: 100vh;
-  // `;
-
   const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px;
+  `;
 
-  const Section = styled.div`
+  const Divider = styled.div`
     width: 80%;
     margin: auto;
   `;
@@ -53,17 +51,15 @@ export default function Projects() {
     text-decoration: underline;
   `;
 
-
-
   return (
-    <div>
+    <div className="col-12">
       <Container>
-        <Section>
+        <Divider>
           <h2>Projects</h2>
           <ImgContainer>
             <Img></Img>
           </ImgContainer>
-        </Section>
+        </Divider>
 
         <ProjectContainer>
           <Role>
@@ -78,13 +74,19 @@ export default function Projects() {
               and ratings within the app.
             </p>
             <GitLink>
-              <a href="https://github.com/krdlange/arcadia" target="_blank" without rel="noreferrer">View on GitHub</a>
+              <a
+                href="https://github.com/krdlange/arcadia"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on GitHub
+              </a>
             </GitLink>
           </Project>
         </ProjectContainer>
-        <Section>
+        <Divider>
           <Img></Img>
-        </Section>
+        </Divider>
 
         <ProjectContainer>
           <Role>
@@ -98,16 +100,19 @@ export default function Projects() {
               grocery shopping.
             </p>
             <GitLink>
-            <a href="https://github.com/CodeOp-tech/FSPT12-final-project" target="_blank" without rel="noreferrer">
-              View on GitHub
-            </a>
+              <a
+                href="https://github.com/CodeOp-tech/FSPT12-final-project"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on GitHub
+              </a>
             </GitLink>
-
           </Project>
         </ProjectContainer>
-        <Section>
+        <Divider>
           <Img></Img>
-        </Section>
+        </Divider>
       </Container>
     </div>
   );
