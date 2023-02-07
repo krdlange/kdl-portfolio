@@ -52,7 +52,7 @@ export default function Projects() {
   `;
 
   return (
-    <div className="col-12">
+    <div>
       <Container>
         <Divider>
           <h2>Projects</h2>
