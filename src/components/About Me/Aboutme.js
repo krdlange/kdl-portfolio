@@ -10,14 +10,13 @@ export default function Aboutme() {
   const Container = styled.div`
     display: flex;
     flex-direction: column;
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding-top: 50px;
   `;
 
-  const Section = styled.div`
+  const Divider = styled.div`
     width: 80%;
     margin: auto;
   `;
@@ -84,11 +83,11 @@ export default function Aboutme() {
   return (
     <div>
       <Container>
-        <Section>
+        <Divider>
           <ImgContainer>
             <Img></Img>
           </ImgContainer>
-        </Section>
+        </Divider>
         <AboutMeContainer>
           <TextContainer>
             <h2>About Me</h2>
@@ -113,11 +112,11 @@ export default function Aboutme() {
             <ProfileImg></ProfileImg>
           </ProfileImgContainer>
         </AboutMeContainer>
-        <Section>
+        <Divider>
           <ImgContainer>
             <Img></Img>
           </ImgContainer>
-        </Section>
+        </Divider>
       </Container>
     </div>
   );

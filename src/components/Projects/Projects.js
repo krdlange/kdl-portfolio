@@ -20,7 +20,9 @@ export default function Projects() {
   const ImgContainer = styled.div`
     max-width: 100%;
     justify-content: center;
+    align-items: center;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 0px 4px 0px;
   `;
 
@@ -55,8 +57,8 @@ export default function Projects() {
     <div>
       <Container>
         <Divider>
-          <h2>Projects</h2>
           <ImgContainer>
+          <h2>Projects</h2>
             <Img></Img>
           </ImgContainer>
         </Divider>

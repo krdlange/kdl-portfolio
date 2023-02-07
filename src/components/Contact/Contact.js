@@ -2,14 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import lineImg from "./line.png";
 import Button from "../Button.js";
-// import { device } from "../Device";
 
 export default function Contact() {
   const Container = styled.div`
-    // display: flex;
     flex-direction: column;
-    // margin: 300px auto;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +13,7 @@ export default function Contact() {
     padding-top: 50px;
   `;
 
-  const Section = styled.div`
+  const Divider = styled.div`
     width: 80%;
     margin: 4px auto;
   `;
@@ -62,11 +58,11 @@ export default function Contact() {
   return (
     <div>
       <Container>
-        <Section>
+        <Divider>
           <ImgContainer>
             <Img></Img>
           </ImgContainer>
-        </Section>
+        </Divider>
         <TitleContainer>
           <h2>Contact</h2>
         </TitleContainer>
@@ -87,11 +83,11 @@ export default function Contact() {
           </a>
         </BtnContainer>
 
-        <Section>
+        <Divider>
           <ImgContainer>
             <Img></Img>
           </ImgContainer>
-        </Section>
+        </Divider>
         <Footer>
           <p>Designed and developed by yours truly.</p>
         </Footer>
