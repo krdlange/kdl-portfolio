@@ -1,13 +1,12 @@
 import React from "react";
 import lineImg from "./line.png";
 import styled from "styled-components";
+import { device } from "../Device";
 
 export default function Projects() {
   const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     padding-top: 50px;
   `;
@@ -20,13 +19,10 @@ export default function Projects() {
   const ImgContainer = styled.div`
     max-width: 100%;
     justify-content: center;
-    align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 0px 4px 0px;
   `;
 
-  const Img = styled.img.attrs({
+  const Img = styled.img.attrs({ 
     src: `${lineImg}`,
   })`
     height: auto;
@@ -34,36 +30,57 @@ export default function Projects() {
   }`;
 
   const ProjectContainer = styled.div`
-    display: flex;
-    width: 80%;
-    margin: auto;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+
+  @media ${device.tablet} {
+    flex-direction: row;
+  }
   `;
 
   const Role = styled.div`
     margin: 16px;
-    width: 20%;
+    width: 100%;
+    display: none;
+
+    @media ${device.tablet} {
+      width: 20%;
+    }
   `;
 
   const Project = styled.div`
     margin: 16px;
     width: 80%;
+    @media ${device.tablet} {
+      width: 100%;
+    }
   `;
 
   const GitLink = styled.a`
     text-decoration: underline;
+
+    @media ${device.tablet} {
+      width: 100%;
+    }
   `;
 
   return (
     <div>
       <Container>
+
         <Divider>
           <ImgContainer>
-          <h2>Projects</h2>
+            {/* <h2>Projects</h2> */}
             <Img></Img>
           </ImgContainer>
         </Divider>
 
         <ProjectContainer>
+
           <Role>
             <h4>Front-end & Back-end</h4>
           </Role>
@@ -85,9 +102,13 @@ export default function Projects() {
               </a>
             </GitLink>
           </Project>
+
         </ProjectContainer>
+
         <Divider>
-          <Img></Img>
+          <ImgContainer>
+            <Img></Img>
+          </ImgContainer>
         </Divider>
 
         <ProjectContainer>
@@ -112,9 +133,13 @@ export default function Projects() {
             </GitLink>
           </Project>
         </ProjectContainer>
+
         <Divider>
-          <Img></Img>
+          <ImgContainer>
+            <Img></Img>
+          </ImgContainer>
         </Divider>
+
       </Container>
     </div>
   );
