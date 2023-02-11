@@ -31,12 +31,8 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #1d1d1d;
-  font-weight: 400;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.04em;
 }
 
 p,

@@ -20,6 +20,7 @@ function App() {
 
   const Container = styled.div`
     display: flex;
+    max-width: 1920px;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;

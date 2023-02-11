@@ -22,7 +22,6 @@ export default function Contact() {
     max-width: 100%;
     justify-content: center;
     display: flex;
-    // margin-bottom: 32px;
   `;
 
   const Img = styled.img.attrs({
