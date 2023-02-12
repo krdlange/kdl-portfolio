@@ -4,6 +4,14 @@ body {
   font-family: "Urbanist", sans-serif;
 }
 
+@media (max-width: 900px) {
+  html, body { font-size: 14px; }
+}
+
+@media (max-width: 400px) {
+  html, body { font-size: 12px; }
+}
+
 h1,
 h2,
 h3 {
@@ -11,37 +19,57 @@ h3 {
 }
 
 h1 {
-  font-size: 1.999rem;
+  font-size: 2.369rem;
   color: #1d1d1d;
+  letter-spacing: 0.04rem;
 }
 
 h2 {
   font-size: 1.777rem;
   color: #1d1d1d;
+  letter-spacing: 0.04rem;
 }
 
 h3 {
   font-size: 1.333rem;
   color: #f05600;
+  line-height: 0px;
+  letter-spacing: 0.04rem;
 }
 
 h4 {
   font-size: 1rem;
   color: #1d1d1d;
+  letter-spacing: 0.04rem;
 }
 
 h5 {
   font-size: 0.75rem;
+  font-weight: 600;
   color: #1d1d1d;
+  letter-spacing: 0.04rem;
 }
 
 p,
 span {
   font-family: "Urbanist", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1rem;
-  line-height: 19px;
-  letter-spacing: 0.06em;
+  line-height: 21px;
+  letter-spacing: 0.04rem;
   color: #1d1d1d;
 }
+
+a:link, a:visited {
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+a:hover, a:active {
+  color: #f05600;
+  cursor: pointer;
+}
+

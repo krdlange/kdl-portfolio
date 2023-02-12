@@ -19,6 +19,7 @@ const ButtonComponent = styled.button`
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
   width: 160px;
+  cursor: pointer;
   background-color: ${({ type }) => backgroundColors[type]};
   :hover {
     background-color: ${({ type }) => hoverBgColors[type]};

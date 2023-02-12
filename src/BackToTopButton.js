@@ -36,6 +36,7 @@ const BackToTopButton = () => {
     width: 100px;
     :hover {
       background-color: #393933;
+      cursor: pointer;
     }
   `;
 
