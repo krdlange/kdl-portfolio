@@ -13,7 +13,7 @@ export default function Projects() {
 
   const Divider = styled.div`
     width: 80%;
-    margin: auto;
+    margin: 8px auto;
   `;
 
   const ImgContainer = styled.div`
@@ -22,7 +22,13 @@ export default function Projects() {
     display: flex;
   `;
 
-  const Img = styled.img.attrs({ 
+  const TitleContainer = styled.div`
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+  `;
+
+  const Img = styled.img.attrs({
     src: `${lineImg}`,
   })`
     height: auto;
@@ -30,63 +36,46 @@ export default function Projects() {
   }`;
 
   const ProjectContainer = styled.div`
-  max-width: 100%;
-  justify-content: center;
-  display: flex;
-  width: 60%;
-  margin: auto;
-  flex-direction: column;
-
-  @media ${device.tablet} {
-    flex-direction: row;
-  }
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    margin: 8px auto;
+    flex-direction: column;
   `;
 
   const Role = styled.div`
     margin: 16px;
     width: 100%;
-    display: none;
-
-    @media ${device.tablet} {
-      width: 20%;
-    }
   `;
 
   const Project = styled.div`
     margin: 16px;
-    width: 80%;
-    @media ${device.tablet} {
-      width: 100%;
-    }
+    width: 100%;
   `;
 
   const GitLink = styled.a`
     text-decoration: underline;
-
-    @media ${device.tablet} {
-      width: 100%;
-    }
+    width: 100%;
   `;
 
   return (
     <div>
       <Container>
+        <TitleContainer>
+          <h2>Projects</h2>
+        </TitleContainer>
 
         <Divider>
           <ImgContainer>
-            {/* <h2>Projects</h2> */}
             <Img></Img>
           </ImgContainer>
         </Divider>
 
         <ProjectContainer>
-
-          <Role>
-            <h4>Front-end & Back-end</h4>
-          </Role>
-
           <Project>
             <h3>Arcadia</h3>
+            <h5>Front-end & Back-end</h5>
             <p>
               A web application that helps gamers find & discover new games,
               save them to their personal collection, and track their progress
@@ -102,7 +91,6 @@ export default function Projects() {
               </a>
             </GitLink>
           </Project>
-
         </ProjectContainer>
 
         <Divider>
@@ -112,12 +100,9 @@ export default function Projects() {
         </Divider>
 
         <ProjectContainer>
-          <Role>
-            <h4>Front-end & Back-end</h4>
-          </Role>
-
           <Project>
             <h3>Recipe Haul</h3>
+            <h5>Front-end & Back-end</h5>
             <p>
               An e-commerce web application that integrates recipe search with
               grocery shopping.
@@ -139,7 +124,6 @@ export default function Projects() {
             <Img></Img>
           </ImgContainer>
         </Divider>
-
       </Container>
     </div>
   );
